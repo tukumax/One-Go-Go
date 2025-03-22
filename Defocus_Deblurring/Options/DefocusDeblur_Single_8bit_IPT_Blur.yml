@@ -10,8 +10,8 @@ datasets:
   train:
     name: TrainSet
     type: Dataset_PairedImage
-    dataroot_gt: ../SCASDNet/data/RainDrop_blur/train/target
-    dataroot_lq: ../SCASDNet/data/RainDrop_blur/train/input
+    dataroot_gt: ./Defocus_Deblurring/Datasets/RainDrop_blur/train/target
+    dataroot_lq: ./Defocus_Deblurring/Datasets/RainDrop_blur/train/input
     geometric_augs: true
 
     filename_tmpl: '{}'
@@ -43,8 +43,8 @@ datasets:
   val:
     name: ValSet
     type: Dataset_PairedImage
-    dataroot_gt: ../SCASDNet/data/RainDrop_blur/val/target
-    dataroot_lq: ../SCASDNet/data/RainDrop_blur/val/input
+    dataroot_gt: ./Defocus_Deblurring/Datasets/RainDrop_blur/val/target
+    dataroot_lq: ./Defocus_Deblurring/Datasets/RainDrop_blur/val/input
     gt_size: 48
     io_backend:
       type: disk
